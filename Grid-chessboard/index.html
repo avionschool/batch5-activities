@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chessboard-grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <div class="image"><img src="avatar.jpg" alt="" srcset="">Immanuel 1069</div>
+    <div class ="player-time">time: &nbsp; 30:00</div>
+    <div>&#9823;</div>
+  </div>
+  <div class="contaier">
+    <div class="chessboard">
+      <div class="item box-white rook empty" id="fill">
+        <div ></div>
+      </div>
+      <div class="item box-black horse" ></div>
+      <div class="item box-white bishop" ></div>
+      <div class="item box-black queen" ></div>
+      <div class="item box-white king" ></div>
+      <div class="item box-black bishop" ></div>
+      <div class="item box-white horse" ></div>
+      <div class="item box-black" ></div>
+
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+      <div class="item box-black" ></div>
+      <div class="item box-white" ></div>
+    </div>
+  </div>
+  <div class="player">
+    <div class="image"><img src="avatar.jpg" alt="" srcset="">Imman 1160</div>
+    <div class ="player-time">time: &nbsp; 30:00</div>
+    <div>&#9823;</div>
+  </div>
+  <script>
+    const fill = document.querySelector('#fill');
+    const empties = document.querySelectorAll('.empty');
+
+    // fill listeners
+
+    fill.addEventListener('dragstart' , dragStart);
+    fill.addEventListener('dragend' , dragEnd);
+
+
+    //drag function 
+
+    function dragStart() {
+      this.className += ' hold';
+    }
+
+    function dragEnd(){
+      this.className = 'rook';
+    }
+  </script>
+</body>
+
+</html>

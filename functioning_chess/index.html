@@ -1,0 +1,42 @@
+<!-- Submission -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="screen">
+        <h2></h2>
+    </div>
+    <div class="" id="main">
+        <div id="board">
+        </div>
+        <div id="bench">
+        </div>
+    </div>
+    <div id="black1">
+        <p id="btnbg1"><button id="blackbtn"><span id="blkmin">5</span>:<span id="blksec">00</span></button></p>
+        <p id="startInstructions"><button>START</button></p>
+    </div>
+    <div id="white1">
+        <p id="mobileIns">.</p>
+        <p id="btnbg"><button id="whitebtn"></i><span id=whtmin>5</span>:<span id="whtsec">00</span></button></p>
+    </div>
+    <select id="times">
+        <option value="1">1 min </option>
+        <option value="3">3 min </option>
+        <option value="5" selected>5 min </option>
+        <option value="10">10 min </option>
+    </select>
+    <div class="controls">  
+        <button id="bt">New Game</button>
+        <button id='bt1'>Undo Move</button>
+    </div>    
+    <script src="chess.js"></script>
+    <script src="Cpeaces_move.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>
